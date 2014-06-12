@@ -31,12 +31,14 @@
           <groupId>org.jboss.resteasy</groupId>
           <artifactId>resteasy-jaxrs</artifactId>
           <version>${version.org.jboss.resteasy.jaxrs}</version>
+          <scope>provided</scope>
       </dependency>
 
       <dependency>
           <groupId>org.jboss.resteasy</groupId>
           <artifactId>resteasy-multipart-provider</artifactId>
           <version>3.0.8.Final</version>
+          <scope>provided</scope>
       </dependency>
 
       <dependency>
