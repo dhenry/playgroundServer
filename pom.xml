@@ -10,6 +10,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <version.org.jboss.resteasy.jaxrs>2.2.1.GA</version.org.jboss.resteasy.jaxrs>
+    <version.org.jboss.logging>3.0.0.GA</version.org.jboss.logging>
   </properties>
   <dependencies>
     <dependency>
@@ -19,6 +21,26 @@
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
+      <dependency>
+          <groupId>org.jboss.resteasy</groupId>
+          <artifactId>resteasy-jaxrs</artifactId>
+          <version>${version.org.jboss.resteasy.jaxrs}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.jboss.resteasy</groupId>
+          <artifactId>resteasy-jackson-provider</artifactId>
+          <version>${version.org.jboss.resteasy.jaxrs}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.jboss.logging</groupId>
+          <artifactId>jboss-logging</artifactId>
+          <version>${version.org.jboss.logging}</version>
+      </dependency>
+      <dependency>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time</artifactId>
+          <version>2.3</version>
+      </dependency>
   </dependencies>
   <profiles>
     <profile>
