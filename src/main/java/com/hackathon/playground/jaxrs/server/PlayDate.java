@@ -5,9 +5,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * Created by Dave on 6/12/2014.
- */
 public class PlayDate {
     private String id;
     private String location;
@@ -130,6 +127,9 @@ public class PlayDate {
 
     public void setOrganiser(String organiser) {
         this.organiser = organiser;
+        if (getAttendeeIndex(organiser) == -1) {
+            addAttendee(organiser);
+        }
     }
 
     @Override
