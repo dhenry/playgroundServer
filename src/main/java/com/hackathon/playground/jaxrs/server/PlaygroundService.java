@@ -21,9 +21,9 @@ import org.joda.time.DateTime;
 
 @Consumes({ "application/json" })
 @Produces({ "application/json" })
-public class Playground {
+public class PlaygroundService {
 
-    private static final Logger log = Logger.getLogger(Playground.class);
+    private static final Logger log = Logger.getLogger(PlaygroundService.class);
 
     private static Map<String, PlayDate> playDates = new LinkedHashMap<String, PlayDate>();
     static {
