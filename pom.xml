@@ -22,20 +22,29 @@
       <scope>provided</scope>
     </dependency>
       <dependency>
+          <groupId>org.jboss.spec.javax.ws.rs</groupId>
+          <artifactId>jboss-jaxrs-api_1.1_spec</artifactId>
+          <version>1.0.0.Final</version>
+      </dependency>
+
+      <dependency>
           <groupId>org.jboss.resteasy</groupId>
           <artifactId>resteasy-jaxrs</artifactId>
           <version>${version.org.jboss.resteasy.jaxrs}</version>
       </dependency>
+
       <dependency>
           <groupId>org.jboss.resteasy</groupId>
-          <artifactId>resteasy-jackson-provider</artifactId>
-          <version>${version.org.jboss.resteasy.jaxrs}</version>
+          <artifactId>resteasy-multipart-provider</artifactId>
+          <version>3.0.8.Final</version>
       </dependency>
+
       <dependency>
           <groupId>org.jboss.logging</groupId>
           <artifactId>jboss-logging</artifactId>
           <version>${version.org.jboss.logging}</version>
       </dependency>
+
       <dependency>
           <groupId>joda-time</groupId>
           <artifactId>joda-time</artifactId>

@@ -19,7 +19,6 @@ import com.hackathon.playground.jaxrs.exception.PlaygroundException;
 import org.jboss.logging.Logger;
 import org.joda.time.DateTime;
 
-@Path("/playground")
 @Consumes({ "application/json" })
 @Produces({ "application/json" })
 public class Playground {
